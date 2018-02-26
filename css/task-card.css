@@ -8,3 +8,12 @@
   height: 14px;
   opacity: 100;
 }
+
+.card-a {
+  color: #000;
+}
+
+.card-a:hover {
+  text-decoration: none;
+  color: #A6A2A0;
+}

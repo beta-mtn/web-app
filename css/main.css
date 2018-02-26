@@ -6,7 +6,23 @@ html {
 	box-sizing: inherit;
 }
 
-body {
+header {
   background-color: #009FAF;
+}
+
+body {
+  background-color: #f1f1f1;
   font-family: Lato, sans-serif;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
