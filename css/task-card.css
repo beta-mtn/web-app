@@ -1,0 +1,10 @@
+.task-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  opacity: 100;
+}
