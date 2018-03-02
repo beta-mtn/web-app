@@ -1,0 +1,24 @@
+.task-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  opacity: 100;
+}
+
+.card-a {
+  color: #000;
+}
+
+.card-a:hover {
+  text-decoration: none;
+  color: #027884;
+}
+
+.event-card {
+  background-color: #009FAF;
+  color: #fff;
+}
