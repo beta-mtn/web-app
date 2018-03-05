@@ -1,19 +1,22 @@
 .task-card {
   background-color: #FFFFFF;
   border-radius: 10px;
-}
-
-.checkbox {
-  width: 14px;
-  height: 14px;
-  opacity: 100;
-}
-
-.card-a {
+  max-width: 20em;
+  max-height: 4em;
   color: #000;
 }
 
-.card-a:hover {
+#checkbox {
+  width: 22px;
+  height: 22px;
+  opacity: 100;
+}
+
+.task-name {
+  padding-right: 2em;
+}
+
+.task-card:hover {
   text-decoration: none;
   color: #027884;
 }
@@ -21,4 +24,20 @@
 .event-card {
   background-color: #009FAF;
   color: #fff;
+  border-radius: 10px;
+  max-width: 20em;
+  max-height: 4em;
+}
+
+.event-card:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card-content {
+
+  }
+
 }
