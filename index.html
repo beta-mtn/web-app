@@ -12,16 +12,28 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
 
-<header class="island-1-4">
-  <h1>Focused</h1>
-  <nav>
-    <ul class="list-group list-group-inline text-center">
-      <li><a class="island-1-2 link-box" href="#">TO DO</a></li>
-      <li><a class="island-1-2 link-box" href="#">FOCUSED</a></li>
-      <li><a class="island-1-2 link-box" href="#">RECENT</a></li>
-    </ul>
-  </nav>
+<header role="banner">
+  <div class="masthead">
+    <div class="logo pad-t-1-2 pad-b-1-2 gutter-1-2">
+      <i class="icon i-16">
+      <img class="image-flex pad-b-1-2">
+    </i>
+      <h1 class="kilo">FOCUSED</h1>
+    </div>
+    <div class="nav">
+      <div class="wrapper unit xs-1 s-1 m-1 l-3-4 gutter-1-2">
+        <nav role="navigation" id="nav">
+          <ol class="milli list-group-inline push-0 navigation">
+            <li><a href="{{site.baseurl}}/#about">TO DO |</a></li>
+            <li><a href="{{site.baseurl}}/#works">FOCUSED |</a></li>
+            <li><a href="{{site.baseurl}}/#contact">RECENT |</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
+
 
 <body class="island-1-4">
 
@@ -61,7 +73,11 @@
   </div>
 
   <div class="text-center">
-    <a class="btn">FOCUS SCHEDULE</a>
+    <a class="btn-blue">FOCUS SCHEDULE</a>
+  </div>
+
+  <div class="cssCircle plusSign not-bold pin-right-bottom">
+    &#43;
   </div>
 
 </body>

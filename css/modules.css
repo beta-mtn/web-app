@@ -555,8 +555,8 @@ svg.img-flex {
 .pin-center-bottom,
 .pin-bc,
 .pin-cb {
-  bottom: 0;
-  left: 50%;
+  bottom: 100px;
+  left: 10%;
   transform: translateX(-50%);
 }
 
