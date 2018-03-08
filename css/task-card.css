@@ -60,7 +60,8 @@ input[type=checkbox]:checked ~ .task-settings {
 
 
 #task-one,
-#task-two {
+#task-two,
+#task-three {
   width: 75%;
 }
 
