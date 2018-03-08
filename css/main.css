@@ -21,6 +21,10 @@ h1 {
   text-align: center;
 }
 
+.masthead {
+  max-width: 20em;
+}
+
 .navigation {
   color: #fff;
   text-align: center;
