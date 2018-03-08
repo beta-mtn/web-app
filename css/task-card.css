@@ -15,6 +15,7 @@
   margin-top: 1em;
 }
 
+
 .task-name {
   padding-right: 2em;
 }
@@ -36,6 +37,7 @@
   color: #f1f1f1;
 }
 
+
 .time-dial {
   background-color: #f1f1f1;
   padding-bottom: 2em;
@@ -43,11 +45,19 @@
 
 .task-settings {
   background-color: #fff;
+  max-width: 20em;
+  padding-bottom: 1em;
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .task-settings {
+  display: block;
 }
 
 .task-title {
   color: #00BCD4;
 }
+
 
 #task-one,
 #task-two {

@@ -11,7 +11,7 @@
   <link href="css/task-card.css" rel="stylesheet">
 </head>
 <body>
-  <input class="" type="checkbox" id="FirstBox">
+  <input class="checkbox" type="checkbox" id="FirstBox" name="checkbox">
   <label for="FirstBox" class="link-box task-card island-1-4 push">
     <div class="grid">
       <div class="unit s-1-4 m-1-4 l-1-5">
@@ -29,7 +29,7 @@
     </div>
   </label>
 
-  <div class="task-settings">
+  <label class="task-settings" for="FirstBox" id="task-settings">
     <div class="time-dial">
       <h3 class="milli">Choose Colour</h3>
       <div class="coloured-circles text-center push">
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <form class="task-settings pad-t">
+    <form class="pad-t">
 
       <div class="task-one push">
         <label for="task-one">
@@ -85,9 +85,12 @@
         </div>
       </div>
 
-
     </form>
-  </div>
+
+    <div class="text-center pad-t">
+      <a href="#" class="btn-blue">DONE</a>
+    </div>
+  </label>
 
 </body>
 </html>
