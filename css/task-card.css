@@ -36,6 +36,28 @@
   color: #f1f1f1;
 }
 
+.time-dial {
+  background-color: #f1f1f1;
+  padding-bottom: 2em;
+}
+
+.task-settings {
+  background-color: #fff;
+}
+
+.task-title {
+  color: #00BCD4;
+}
+
+#task-one,
+#task-two {
+  width: 75%;
+}
+
+#est-time {
+  width: 25%;
+}
+
 @media only screen and (min-width: 25em) {
 
   .card-content {
