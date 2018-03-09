@@ -5,6 +5,18 @@
   color: #000;
 }
 
+.recent-card {
+  background-color: #FFFFFF;
+  max-width: 20em;
+  color: #000;
+  border-radius: 12px;
+}
+
+.small-text {
+  color: #949696;
+  font-size: 12px;
+}
+
 [type="checkbox"] + label, [type="radio"] + label, .label-inline {
   display: block;
 }
