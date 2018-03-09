@@ -10,6 +10,7 @@
   max-width: 20em;
   color: #000;
   border-radius: 12px;
+  display: none;
 }
 
 .small-text {
@@ -83,7 +84,8 @@ input[type=checkbox]:checked ~ .task-settings {
 
 @media only screen and (min-width: 25em) {
 
-  .card-content {
+  .recent-card {
+    display: block;
 
   }
 
