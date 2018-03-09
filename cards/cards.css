@@ -78,11 +78,8 @@ p{
   transform: scale(.9);
   transition: all 300ms linear;
 }
-.btn {
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
+.right{
+  float: right
+}
 
