@@ -5,6 +5,19 @@
   color: #000;
 }
 
+.recent-card {
+  background-color: #FFFFFF;
+  max-width: 20em;
+  color: #000;
+  border-radius: 12px;
+  display: none;
+}
+
+.small-text {
+  color: #949696;
+  font-size: 12px;
+}
+
 [type="checkbox"] + label, [type="radio"] + label, .label-inline {
   display: block;
 }
@@ -69,10 +82,31 @@ input[type=checkbox]:checked ~ .task-settings {
   width: 25%;
 }
 
-@media only screen and (min-width: 25em) {
+.countdown {
+  color: #00BCD4;
+}
 
-  .card-content {
+.task-times {
+  color: #9E9E9E;
+}
 
+.breaktime-hr {
+  padding-left: 3em;
+}
+
+.focused-large-screen {
+  display: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .recent-card {
+    display: block;
+
+  }
+
+  .focused-large-screen {
+    display: inline-block;
   }
 
 }
