@@ -82,11 +82,31 @@ input[type=checkbox]:checked ~ .task-settings {
   width: 25%;
 }
 
-@media only screen and (min-width: 25em) {
+.countdown {
+  color: #00BCD4;
+}
+
+.task-times {
+  color: #9E9E9E;
+}
+
+.breaktime-hr {
+  padding-left: 3em;
+}
+
+.focused-large-screen {
+  display: none;
+}
+
+@media only screen and (min-width: 60em) {
 
   .recent-card {
     display: block;
 
+  }
+
+  .focused-large-screen {
+    display: inline-block;
   }
 
 }
