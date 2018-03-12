@@ -225,6 +225,10 @@ h3 {
   color: #009faf;
 }
 
+.focus-bg {
+  background-color: #707070;
+}
+
 
 @media only screen and (min-width: 35em) {
 
