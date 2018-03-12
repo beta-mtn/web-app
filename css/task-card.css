@@ -75,6 +75,10 @@ input[type=checkbox]:checked ~ .task-settings {
   color: #00BCD4;
 }
 
+.card-title {
+  color: #022b2d;
+  background:linear-gradient(#0093A6,#004A53);
+}
 input[type=text] {
   border-top: 0;
   border-left: 0;
