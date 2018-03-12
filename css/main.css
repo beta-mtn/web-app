@@ -203,4 +203,30 @@ header {
 .footer {
   background-color: #013C42;
   color: #fff;
+  text-align: center;
+}
+
+.about {
+  position: relative;
+}
+
+.about-content {
+  background-color: #013C42;
+  color: #fff;
+}
+
+.index-cards{
+  text-align: center;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .about-content {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    background-color: transparent;
+  }
+
 }
