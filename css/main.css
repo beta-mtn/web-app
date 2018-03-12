@@ -61,6 +61,10 @@ header {
   outline: 3px solid #fff;
 }
 
+.nav .todo, .nav .focused, .nav .recent {
+color: #05c9d3;
+}
+
 .btn {
   background:linear-gradient(#0093A6,#004A53);
   border-color: #027884;
