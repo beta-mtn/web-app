@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 
-<body class="">
+<body class="grid">
 
-  <header class="grid" role="banner">
-    <div class="masthead unit s-1 m-1 l-1">
+  <header class="unit s-1 m-1 l-1-3" role="banner">
+    <div class="masthead push">
       <div class="logo pad-t-1-2 pad-b-1-2 gutter-1-2">
         <i class="icon i-16">
         <img class="image-flex pad-b-1-2">
@@ -25,7 +25,7 @@
       </div>
       </div>
       <div class="nav">
-        <div class="wrapper unit xs-1 s-1 m-1 l-3-4 gutter-1-2">
+        <div class="wrapper">
           <nav role="navigation" id="nav">
             <ol class="milli list-group-inline push-0 navigation">
               <li><a href="{{site.baseurl}}/#about">TO DO |</a></li>
@@ -36,213 +36,235 @@
         </div>
       </div>
     </div>
+    <section class="grid">
+      <input class="" type="checkbox" id="FirstBox">
+      <label for="FirstBox" class="task-card push unit s-1 m-1 l-1">
+        <div class="grid">
+          <div class="unit s-1-4 m-1-4 l-1-4">
+            <i class="icon i-32">
+              <img class="" src="images/icons/school.svg">
+            </i>
+          </div>
+          <div class="unit s-2-4 m-2-4 l-2-4">
+            <h2 class="push-0 push-r milli task-name">Computer Graphics</h2>
+          </div>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">100 Points</p>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 5</p>
+        </div>
+      </label>
+
+      <label class="task-settings  unit s-1 m-1 l-1" for="FirstBox" id="task-settings">
+        <div class="time-dial">
+          <h3 class="milli">Choose Colour</h3>
+          <div class="coloured-circles text-center push">
+            <svg class="red-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="red"/>
+            </svg>
+            <svg class="purple-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="purple"/>
+            </svg>
+            <svg class="navy-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="navy"/>
+            </svg>
+            <svg class="blue-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="blue"/>
+            </svg>
+          </div>
+
+          <div class="est-time-animation">
+            <i class="icon i-256">
+              <svg class="circle_shadow" id="estmated-time-graph" width="500" height="500" viewBox="0 0 400 950">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="42" x2="688" y1="106" y2="106" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#3b8892"/>
+                    <stop offset="1" stop-color="#5b0606"/>
+                  </linearGradient>
+                </defs>
+                <rect id="gradient" width="646" height="92" x="42" y="60" fill="url(#linear-gradient)"/>
+                <path  class="circle" id="circle" fill="#e6e7e8" d="M374 224.06h-.79l-20-31.06-16.88 32.74q-10.86 1.34-21.76 3.69C185.5 257.49 103.57 384.91 131.64 514s155.49 211.09 284.61 183 211.06-155.49 183-284.62C575.52 303.24 480.77 227.81 374 224.06z"/>
+                <rect class= "bar" id="bar" width="28.8" height="130.2" x="336.61" y="35.55" fill="#e6e7e8" rx="7.5" ry="7.5"/>
+              </svg>
+            </i>
+          </div>
+
+          <div class="unit s-1-2 m-1-2 l-1-2">
+            <h2 id="hours" class="hours"> 10hrs </h2>
+          </div>
+
+          </div>
+          <script src="js/counter.js"></script>
+
+          <div class="text-center push">
+            <a href="#" class="btn-grey push-r">PRIORITY</a>
+            <a href="#" class="btn-blue">EST TIME</a>
+          </div>
+        </div>
+
+        <form class="pad-t">
+
+          <div class="task-one push">
+            <label for="task-one">
+              <h4 class="task-title not-bold milli push-1-2">TASK ONE</h4>
+            </label>
+            <div class="grid">
+              <input class="unit s-2-3 text-input" id="task-one" type="text">
+              <select class="unit s-1-3" id="est-time">
+                <option>1hr</option>
+                <option>2hr</option>
+                <option>3hr</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="task-two push">
+            <label for="task-two">
+              <h4 class="task-title not-bold milli push-1-2">TASK TWO</h4>
+            </label>
+            <div class="grid">
+              <input class="unit s-2-3" id="task-two" type="text">
+              <select class="unit s-1-3" id="est-time">
+                <option>1hr</option>
+                <option>2hr</option>
+                <option>3hr</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="text-center pad-t">
+          <a href="#" class="btn-blue">DONE</a>
+        </div>
+      </label>
+
+
+      <a href="#" class="link-box event-card push unit s-1 m-1 l-1">
+        <div class="grid">
+          <div class="unit s-1-4 m-1-4 l-1-4">
+            <i class="icon i-32">
+              <img class="" src="images/icons/calendar.svg">
+            </i>
+          </div>
+          <div class="unit s-2-4 m-2-4 l-2-4">
+            <h2 class="push-0 push-r milli task-name">Doctor's Appointment</h2>
+          </div>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">4pm</p>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 5</p>
+        </div>
+      </a>
+
+      <input class="" type="checkbox" id="SecondBox">
+      <label for="SecondBox" class="link-box task-card push unit s-1 m-1 l-1">
+        <div class="grid">
+          <div class="unit s-1-4 m-1-4 l-1-4">
+            <i class="icon i-32">
+              <img class="" src="images/icons/school.svg">
+            </i>
+          </div>
+          <div class="unit s-2-4 m-2-4 l-2-4">
+            <h2 class="push-0 push-r milli task-name">Graphic Design</h2>
+          </div>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">100 Points</p>
+            <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 7</p>
+        </div>
+      </label>
+
+      <label class="task-settings  unit s-1 m-1 l-1" for="SecondBox" id="task-settings">
+        <div class="time-dial">
+          <h3 class="milli">Choose Colour</h3>
+          <div class="coloured-circles text-center push">
+            <svg class="red-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="red"/>
+            </svg>
+            <svg class="purple-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="purple"/>
+            </svg>
+            <svg class="navy-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="navy"/>
+            </svg>
+            <svg class="blue-circle" height="50" width="50">
+              <circle cx="20" cy="20" r="15" fill="blue"/>
+            </svg>
+          </div>
+
+          <div class="est-time-animation">
+            <i class="icon i-256">
+              <svg class="circle_shadow" id="estmated-time-graph" width="500" height="500" viewBox="0 0 400 950">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="42" x2="688" y1="106" y2="106" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#3b8892"/>
+                    <stop offset="1" stop-color="#5b0606"/>
+                  </linearGradient>
+                </defs>
+                <rect id="gradient" width="646" height="92" x="42" y="60" fill="url(#linear-gradient)"/>
+                <path  class="circle" id="circle" fill="#e6e7e8" d="M374 224.06h-.79l-20-31.06-16.88 32.74q-10.86 1.34-21.76 3.69C185.5 257.49 103.57 384.91 131.64 514s155.49 211.09 284.61 183 211.06-155.49 183-284.62C575.52 303.24 480.77 227.81 374 224.06z"/>
+                <rect class= "bar" id="bar" width="28.8" height="130.2" x="336.61" y="35.55" fill="#e6e7e8" rx="7.5" ry="7.5"/>
+              </svg>
+            </i>
+          </div>
+
+          <div class="unit s-1-2 m-1-2 l-1-2">
+            <h2 id="hours" class="hours"> 10hrs </h2>
+          </div>
+
+          </div>
+          <script src="js/counter.js"></script>
+
+          <div class="text-center push">
+            <a href="#" class="btn-grey push-r">PRIORITY</a>
+            <a href="#" class="btn-blue">EST TIME</a>
+          </div>
+        </div>
+
+        <form class="pad-t">
+
+          <div class="task-one push">
+            <label for="task-one">
+              <h4 class="task-title not-bold milli push-1-2">TASK ONE</h4>
+            </label>
+            <div class="grid">
+              <input class="unit s-2-3 text-input" id="task-one" type="text">
+              <select class="unit s-1-3" id="est-time">
+                <option>1hr</option>
+                <option>2hr</option>
+                <option>3hr</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="task-two push">
+            <label for="task-two">
+              <h4 class="task-title not-bold milli push-1-2">TASK TWO</h4>
+            </label>
+            <div class="grid">
+              <input class="unit s-2-3" id="task-two" type="text">
+              <select class="unit s-1-3" id="est-time">
+                <option>1hr</option>
+                <option>2hr</option>
+                <option>3hr</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="text-center pad-t">
+          <a href="#" class="btn-blue">DONE</a>
+        </div>
+      </label>
+
+      </div>
+
+      <a class="btn-blue unit s-1 m-1 l-1">FOCUS SCHEDULE</a>
+
+      <div class="cssCircle plusSign not-bold pin-right-bottom">
+        &#43;
+      </div>
+
+    </section>
   </header>
 
-  <section class="pad-t push left">
-    <input class="" type="checkbox" id="FirstBox">
-    <label for="FirstBox" class="link-box task-card island-1-4 push">
-      <div class="grid">
-        <div class="unit s-1-4 m-1-4 l-1-5">
-          <i class="icon i-32">
-            <img class="" src="images/icons/school.svg"></img>
-          </i>
-        </div>
-        <div class="unit s-3-4 m-3-4 l-3-5">
-          <h2 class="push-0 push-r giga task-name">Computer Graphics</h2>
-        </div>
-        <div class="card-content gutter">
-          <p class="unit s-3-4 m-3-4 l-3-5 push-r micro">100 Points</p>
-          <p class="unit s-1-4 m-1-4 l-2-5 micro">Mar 5</p>
-        </div>
-      </div>
-    </label>
-
-    <label class="task-settings" for="FirstBox" id="task-settings">
-      <div class="time-dial">
-        <h3 class="milli">Choose Colour</h3>
-        <div class="coloured-circles text-center push">
-          <svg class="red-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="red"/>
-          </svg>
-          <svg class="purple-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="purple"/>
-          </svg>
-          <svg class="navy-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="navy"/>
-          </svg>
-          <svg class="blue-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="blue"/>
-          </svg>
-        </div>
-
-        <div class="grid">
-        <div class="unit s-1-4 m-1-4 l-1-4">
-          <i>
-        <svg class="circle_shadow" id="estmated-time-graph" width="722.8" height="722.8" viewBox="0 0 722.8 722.8">
-          <defs>
-            <linearGradient id="linear-gradient" x1="42" x2="688" y1="106" y2="106" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#3b8892"/>
-              <stop offset="1" stop-color="#5b0606"/>
-            </linearGradient>
-          </defs>
-          <rect id="gradient" width="646" height="92" x="42" y="60" fill="url(#linear-gradient)"/>
-          <path  class="circle" id="circle" fill="#e6e7e8" d="M374 224.06h-.79l-20-31.06-16.88 32.74q-10.86 1.34-21.76 3.69C185.5 257.49 103.57 384.91 131.64 514s155.49 211.09 284.61 183 211.06-155.49 183-284.62C575.52 303.24 480.77 227.81 374 224.06z"/>
-          <rect class= "bar" id="bar" width="28.8" height="130.2" x="336.61" y="35.55" fill="#e6e7e8" rx="7.5" ry="7.5"/>
-        </svg>
-        </i>
-        </div>
-
-        <div class="unit s-1-2 m-1-2 l-1-2">
-          <h2 id="hours" class="hours "> 10hrs </h2>
-        </div>
-
-        </div>
-        <script src="js/counter.js"></script>
-
-        <div class="text-center push">
-          <a href="#" class="btn-grey push-r">PRIORITY</a>
-          <a href="#" class="btn-blue">EST TIME</a>
-        </div>
-      </div>
-
-      <form class="pad-t">
-
-        <div class="task-one push">
-          <label for="task-one">
-            <h4 class="task-title not-bold milli push-1-2">TASK ONE</h4>
-          </label>
-          <div class="grid">
-            <input class="unit s-2-3" id="task-one" type="text">
-            <select class="unit s-1-3" id="est-time">
-              <option>1hr</option>
-              <option>2hr</option>
-              <option>3hr</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="task-two push">
-          <label for="task-two">
-            <h4 class="task-title not-bold milli push-1-2">TASK TWO</h4>
-          </label>
-          <div class="grid">
-            <input class="unit s-2-3" id="task-two" type="text">
-            <select class="unit s-1-3" id="est-time">
-              <option>1hr</option>
-              <option>2hr</option>
-              <option>3hr</option>
-            </select>
-          </div>
-        </div>
-
-      </form>
-
-      <div class="text-center pad-t">
-        <a href="#" class="btn-blue">DONE</a>
-      </div>
-    </label>
-
-    <input class="secondtask" type="checkbox" id="secondtask">
-    <label for="secondtask" class="link-box task-card island-1-4 push">
-      <div class="grid">
-        <div class="unit s-1-4 m-1-4 l-1-5">
-          <i class="icon i-32">
-            <img class="" src="images/icons/school.svg"></img>
-          </i>
-        </div>
-        <div class="unit s-3-4 m-3-4 l-3-5">
-          <h2 class="push-0 push-r giga task-name">Graphic Design</h2>
-        </div>
-        <div class="card-content gutter">
-          <p class="unit s-3-4 m-3-4 l-3-5 push-r micro">100 Points</p>
-          <p class="unit s-1-4 m-1-4 l-2-5 micro">Mar 7</p>
-        </div>
-      </div>
-    </label>
-
-    <label class="task-settings" for="SecondBox" id="task-settings">
-      <div class="time-dial">
-        <h3 class="milli">Choose Colour</h3>
-        <div class="coloured-circles text-center push">
-          <svg class="red-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="red"/>
-          </svg>
-          <svg class="purple-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="purple"/>
-          </svg>
-          <svg class="navy-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="navy"/>
-          </svg>
-          <svg class="blue-circle" height="50" width="50">
-            <circle cx="20" cy="20" r="15" fill="blue"/>
-          </svg>
-        </div>
-
-        <p>insert Tao's time estimate animation here</p>
-
-        <div class="text-center push">
-          <a href="#" class="btn-grey push-r">PRIORITY</a>
-          <a href="#" class="btn-blue">EST TIME</a>
-        </div>
-      </div>
-
-      <form class="pad-t">
-
-        <div class="task-one push">
-          <label for="task-one">
-            <h4 class="task-title not-bold milli push-1-2">TASK ONE</h4>
-          </label>
-          <div class="grid">
-            <input class="unit s-2-3" id="task-one" type="text">
-            <select class="unit s-1-3" id="est-time">
-              <option>1hr</option>
-              <option>2hr</option>
-              <option>3hr</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="task-two push">
-          <label for="task-two">
-            <h4 class="task-title not-bold milli push-1-2">TASK TWO</h4>
-          </label>
-          <div class="grid">
-            <input class="unit s-2-3" id="task-two" type="text">
-            <select class="unit s-1-3" id="est-time">
-              <option>1hr</option>
-              <option>2hr</option>
-              <option>3hr</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="task-three push">
-          <label for="task-three">
-            <h4 class="task-title not-bold milli push-1-2">TASK THREE</h4>
-          </label>
-          <div class="grid">
-            <input class="unit s-2-3" id="task-three" type="text">
-            <select class="unit s-1-3" id="est-time">
-              <option>1hr</option>
-              <option>2hr</option>
-              <option>3hr</option>
-            </select>
-          </div>
-        </div>
-
-      </form>
-
-      <div class="text-center pad-t">
-        <a href="#" class="btn-blue">DONE</a>
-      </div>
-    </label>
-
-  </section>
-
-  <div class="text-center pad-t">
-    <a href="#" class="btn-blue">CONFIRM</a>
-  </div>
-</label>
+  <img class="unit l-2-3" src="images/recentgraph.jpg">
 
 </body>
 </html>
