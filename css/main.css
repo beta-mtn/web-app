@@ -25,6 +25,10 @@ h1 {
 header {
     background-color: #f1f1f1;
 }
+
+.focus-header {
+  background-color: #fff;
+}
 .navigation {
   color: #fff;
   text-align: center;
@@ -196,8 +200,10 @@ header {
 }
 
 .hours {
-  color: #00BCD4;
-  font: 100px Roboto, sans-serif
+  color: #023133;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font: 20px Roboto, sans-serif;
+  text-align: center;
 }
 
 .footer {
@@ -215,8 +221,12 @@ header {
   color: #fff;
 }
 
-.index-cards{
-  text-align: center;
+h3 {
+  color: #009faf;
+}
+
+.time-dial {
+  color: #fff;
 }
 
 @media only screen and (min-width: 35em) {
