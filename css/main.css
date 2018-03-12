@@ -111,7 +111,7 @@ h1 {
   color: #9E9E9E;
   transform: scale(.9);
   transition: all 400ms linear;
-  text-align: center;
+  text-align: right;
 }
 
 .cssCircle {
