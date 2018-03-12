@@ -28,9 +28,9 @@
         <div class="wrapper gutter-1-2">
           <nav role="navigation" id="nav">
             <ol class="milli list-group-inline push navigation">
-              <li><a href="index.html">TO DO |</a></li>
-              <li><a href="focused.html">FOCUSED |</a></li>
-              <li><a href="recent.html">RECENT |</a></li>
+              <li><a href="index.html" aria-label="See what is on your to do list">TO DO |</a></li>
+              <li><a href="focused.html" aria-label="See your focused task schedule">FOCUSED |</a></li>
+              <li><a href="recent.html" class="recent" aria-label="See your recent projects">RECENT |</a></li>
             </ol>
           </nav>
         </div>
@@ -38,6 +38,63 @@
     </div>
 
     <section class="grid">
+
+      <div class="recent-small-screen">
+
+     <div class="task-card push unit s-1 m-1 l-1">
+     <div class="grid">
+       <div class="unit gutter-1-4 pad-t-1-4">
+         <i class="icon i-32">
+           <img class="" src="images/icons/school.svg">
+         </i>
+       </div>
+       <div class="unit s-2-4 m-2-4 l-2-4">
+         <h2 class="push-1-4 push-r milli task-name pad-t-1-4">Pinocchio Books</h2>
+       </div>
+       <div class="unit s-1-4 m-1-4 l-1-4">
+         <h2 class="push-1-4 push-r milli task-name pad-t-1-4">B+</h2>
+       </div>
+         <p class="micro unit s-1-2 m-1-2 l-1-2 push-r gutter-1-4">87/100 points</p>
+         <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 29 at 12pm</p>
+     </div>
+   </div>
+
+   <a href="#" class="link-box event-card push unit s-1 m-1 l-1">
+     <div class="grid">
+       <div class="unit gutter-1-4 pad-t-1-4">
+         <i class="icon i-32">
+           <img class="" src="images/icons/calendar.svg">
+         </i>
+       </div>
+       <div class="unit s-2-4 m-2-4 l-2-4">
+         <h2 class="push-1-4 mega task-name pad-t-1-4">Doctor's Appointment</h2>
+       </div>
+           <p class="micro unit s-1-2 m-1-2 l-1-2 push-r gutter-1-4">4pm</p>
+         <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 5</p>
+     </div>
+   </a>
+
+   <div class="link-box task-card push unit s-1 m-1 l-1">
+     <div class="grid">
+       <div class="unit gutter-1-4 pad-t-1-4">
+         <i class="icon i-32">
+           <img class="" src="images/icons/school.svg">
+         </i>
+       </div>
+       <div class="unit s-2-4 m-2-4 l-2-4">
+         <h2 class="push-1-4 push-r milli task-name pad-t-1-4">Id Presentation</h2>
+       </div>
+       <div class="unit s-1-4 m-1-4 l-1-4">
+         <h2 class="push-1-4 push-r milli task-name pad-t-1-4">A+</h2>
+       </div>
+         <p class="micro unit s-1-2 m-1-2 l-1-2 push-r gutter-1-4">98/100 points</p>
+         <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 8 at 6pm</p>
+     </div>
+   </div>
+
+ </div>
+
+ <div class="recent-large-screen">
 
       <input class="" type="checkbox" id="FirstBox">
       <label for="FirstBox" class="task-card push unit s-1 m-1 l-1">
@@ -85,23 +142,27 @@
             <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 7</p>
         </div>
       </label>
+    </div>
 
-
-        <a href="focus-schedule.html" class="btn-blue focus-button unit">FOCUS SCHEDULE</a>
-
-
-      <div class="cssCircle plusSign not-bold pin-right-bottom">
+      <div class="grid bottombuttons">
+        <a href="focus-schedule.html"class="btn-blue unit s-3-4 m-3-4 l-3-4 push-r push">FOCUS SCHEDULE</a>
+      <div class="cssCircle plusSign not-bold unit s-1-4 m-1-4 l-1-4">
         &#43;
       </div>
+    </div>
 
     </section>
   </header>
 
   <section class="todo-large unit s-1 m-1-2 l-2-3">
 
-      <img class=" push img-flex" src="images/recentgraph.jpg">
+    <div class="about push">
+      <div class="embed embed-24by10">
+        <img class="embed-item" src="images/recentgraph.jpg" alt="">
+      </div>
+    </div>
 
-    <a href="#" class="link-box recent-card island-1-4 push right">
+    <div class="link-box recent-card island-1-4 push right">
       <div class="grid gutter">
         <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
           <i class="icon i-32">
@@ -131,9 +192,9 @@
         <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 17: 3-5pm</p>
         <p class="unit s-1-2 m-1-3 l-1-3">05% Complete</p>
       </div>
-    </a>
+    </div>
 
-    <a href="#" class="link-box recent-card island-1-4 push right push-r">
+    <div class="link-box recent-card island-1-4 push right push-r">
       <div class="grid gutter">
         <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
           <i class="icon i-32">
@@ -163,7 +224,7 @@
         <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 2: 12-3pm</p>
         <p class="unit s-1-2 m-1-3 l-1-3">30% Complete</p>
       </div>
-    </a>
+    </div>
 
   </section>
 

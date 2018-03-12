@@ -15,7 +15,7 @@
 <body class="grid">
 
   <header class="unit s-1 m-1-2 l-1-3 gutter-1-2" role="banner">
-    <div class="masthead">
+    <div class="masthead" id="masthead">
       <div class="logo pad-t-1-2 pad-b-1-2 gutter-1-2">
         <div class="text-center">
           <i class="icon i-64">
@@ -28,9 +28,9 @@
         <div class="wrapper gutter-1-2">
           <nav role="navigation" id="nav">
             <ol class="milli list-group-inline push navigation">
-              <li><a href="index.html">TO DO |</a></li>
-              <li><a href="focused.html">FOCUSED |</a></li>
-              <li><a href="recent.html">RECENT |</a></li>
+              <li><a href="index.html" class="todo" aria-label="See what is on your to do list">TO DO |</a></li>
+              <li><a href="focused.html" aria-label="See your focused task schedule">FOCUSED |</a></li>
+              <li><a href="recent.html" aria-label="See your recent projects">RECENT |</a></li>
             </ol>
           </nav>
         </div>
@@ -44,7 +44,7 @@
         <div class="grid">
           <div class="unit gutter-1-4 pad-t-1-4">
             <i class="icon i-32">
-              <img class="" src="images/icons/school.svg">
+              <img aria-label="school" src="images/icons/school.svg">
             </i>
           </div>
           <div class="unit s-2-4 m-2-4 l-2-4">
@@ -55,10 +55,10 @@
         </div>
       </label>
 
-      <a href="#" class="link-box event-card push unit s-1 m-1 l-1">
+      <div class="link-box event-card push unit s-1 m-1 l-1" id="doctor-appointment">
         <div class="grid">
           <div class="unit gutter-1-4 pad-t-1-4">
-            <i class="icon i-32">
+            <i class="icon i-32" aria-label="school">
               <img class="" src="images/icons/calendar.svg">
             </i>
           </div>
@@ -68,13 +68,13 @@
               <p class="micro unit s-1-2 m-1-2 l-1-2 gutter-1-4">4pm</p>
             <p class="micro unit s-1-2 m-1-2 l-1-2">Mar 5</p>
         </div>
-      </a>
+      </div>
 
       <input class="" type="checkbox" id="SecondBox">
       <label for="SecondBox" class="link-box task-card push unit s-1 m-1 l-1">
         <div class="grid">
           <div class="unit gutter-1-4 pad-t-1-4">
-            <i class="icon i-32">
+            <i class="icon i-32" aria-label="school">
               <img class="" src="images/icons/school.svg">
             </i>
           </div>
@@ -86,92 +86,104 @@
         </div>
       </label>
 
-
-        <a href="focus-schedule.html" class="btn-blue focus-button unit">FOCUS SCHEDULE</a>
-
-
-      <div class="cssCircle plusSign not-bold pin-right-bottom">
+      <div class="grid bottombuttons" id="call-to-action">
+      <a href="focus-schedule.html" aria-label="make a focused task list" class="btn-blue unit s-3-4 m-3-4 l-3-4 push-r push">FOCUS SCHEDULE</a>
+      <div class="cssCircle plusSign not-bold unit s-1-4 m-1-4 l-1-4" id="add new task">
         &#43;
       </div>
+    </div>
 
     </section>
   </header>
 
   <section class="todo-large unit s-1 m-1-2 l-2-3">
 
-      <img class=" push img-flex" src="images/recentgraph.jpg">
+  <div class="about push">
+    <div class="embed embed-24by10">
+      <img class="embed-item" src="images/herobanner.jpg" alt="">
+    </div>
+  <div class="about-content pad-t-2 pad-b-2">
+    <div class="wrapper gutter-2">
+      <section id="about">
+        <h2 class="push-1-2 bold megas"> All done your Project?</h2>
+      </section>
+      <a href="https://algonquin.instructure.com/courses"aria-label="Submit your project to canvas" class="btn-blue unit">Submit to Canvas Now</a>
+    </div>
+  </div>
+  </div>
 
-    <a href="#" class="link-box recent-card island-1-4 push right">
-      <div class="grid gutter">
-        <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
-          <i class="icon i-32">
-            <img class="" src="images/icons/school.svg"></img>
-          </i>
-        </div>
-        <div class="unit s-3-4 m-3-4 l-3-5">
-          <h2 class="push-0 milli task-name">Pinocchio Books</h2>
-        </div>
-        <div class="unit s-1-4 m-1-4 l-1-5">
-          <h2 class="push-0 milli task-name">B+</h2>
-        </div>
+  <div class="link-box recent-card island-1-4 push right">
+    <div class="grid gutter">
+      <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
+        <i class="icon i-32">
+          <img class="" src="images/icons/school.svg"></img>
+        </i>
       </div>
-      <div class="card-content gutter small-text">
-        <p class="unit s-3-4 m-3-4 l-3-5 push-r gutter-1-2 bold">87/100 points</p>
-        <p class="unit s-1-4 m-1-4 l-2-5 bold">Mar 29 at 12pm</p>
+      <div class="unit s-3-4 m-3-4 l-3-5">
+        <h2 class="push-0 milli task-name">Pinocchio Books</h2>
       </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 28: 3-5pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">100% Complete</p>
+      <div class="unit s-1-4 m-1-4 l-1-5">
+        <h2 class="push-0 milli task-name">B+</h2>
       </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 19: 5-7pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">80% Complete</p>
-      </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 17: 3-5pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">05% Complete</p>
-      </div>
-    </a>
+    </div>
+    <div class="card-content gutter small-text">
+      <p class="unit s-3-4 m-3-4 l-3-5 push-r gutter-1-2 bold">87/100 points</p>
+      <p class="unit s-1-4 m-1-4 l-2-5 bold">Mar 29 at 12pm</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 28: 3-5pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">100% Complete</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 19: 5-7pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">80% Complete</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 17: 3-5pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">05% Complete</p>
+    </div>
+  </div>
 
-    <a href="#" class="link-box recent-card island-1-4 push right push-r">
-      <div class="grid gutter">
-        <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
-          <i class="icon i-32">
-            <img class="" src="images/icons/school.svg"></img>
-          </i>
-        </div>
-        <div class="unit s-3-4 m-3-4 l-3-5">
-          <h2 class="push-0 milli task-name">Id Presentation</h2>
-        </div>
-        <div class="unit s-1-4 m-1-4 l-1-5">
-          <h2 class="push-0 milli task-name">A+</h2>
-        </div>
+  <div class="link-box recent-card island-1-4 push right push-r">
+    <div class="grid gutter">
+      <div class="unit s-1-4 m-1-4 l-1-5 gutter-1-4">
+        <i class="icon i-32">
+          <img aria-label="school" src="images/icons/school.svg"></img>
+        </i>
       </div>
-      <div class="card-content gutter small-text">
-        <p class="unit s-3-4 m-3-4 l-3-5 push-r gutter-1-2 bold">98/100 points</p>
-        <p class="unit s-1-4 m-1-4 l-2-5 bold">Mar 8 at 6pm</p>
+      <div class="unit s-3-4 m-3-4 l-3-5">
+        <h2 class="push-0 milli task-name">Id Presentation</h2>
       </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 6: 7-9pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">100% Complete</p>
+      <div class="unit s-1-4 m-1-4 l-1-5">
+        <h2 class="push-0 milli task-name">A+</h2>
       </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 4: 5-7pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">70% Complete</p>
-      </div>
-      <div class="gutter small-text">
-        <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 2: 12-3pm</p>
-        <p class="unit s-1-2 m-1-3 l-1-3">30% Complete</p>
-      </div>
-    </a>
+    </div>
+    <div class="card-content gutter small-text">
+      <p class="unit s-3-4 m-3-4 l-3-5 push-r gutter-1-2 bold">98/100 points</p>
+      <p class="unit s-1-4 m-1-4 l-2-5 bold">Mar 8 at 6pm</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 6: 7-9pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">100% Complete</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 4: 5-7pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">70% Complete</p>
+    </div>
+    <div class="gutter small-text">
+      <p class="unit s-1-2 m-1-3 l-1-3 push-r">Mar 2: 12-3pm</p>
+      <p class="unit s-1-2 m-1-3 l-1-3">30% Complete</p>
+    </div>
+  </div>
 
-  </section>
+
+</section>
 
   <footer class="unit s-1 m-1 l-1" role="contentinfo">
     <div class="footer pad-t-1-2 pad-b-1-2">
       <div class="wrapper gutter-1-2">
         <i class="icon i-32 gutter-1-4">
-          <img class="" src="images/focuslogo.svg"></img>
+          <img aria-label="focus" src="images/focuslogo.svg"></img>
         </i>
         <p class="push-0 micro">Focused © <i>Focused on keeping you on track</i>, 2018.</p>
       </div>

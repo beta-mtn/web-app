@@ -25,6 +25,10 @@ h1 {
 header {
     background-color: #f1f1f1;
 }
+
+.focus-header {
+  background-color: #fff;
+}
 .navigation {
   color: #fff;
   text-align: center;
@@ -55,6 +59,10 @@ header {
 
 .nav a:focus {
   outline: 3px solid #fff;
+}
+
+.nav .todo, .nav .focused, .nav .recent {
+color: #05c9d3;
 }
 
 .btn {
@@ -196,11 +204,44 @@ header {
 }
 
 .hours {
-  color: #00BCD4;
-  font: 100px Roboto, sans-serif
+  color: #023133;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font: 20px Roboto, sans-serif;
+  text-align: center;
 }
 
 .footer {
   background-color: #013C42;
   color: #fff;
+  text-align: center;
+}
+
+.about {
+  position: relative;
+}
+
+.about-content {
+  background-color: #013C42;
+  color: #fff;
+}
+
+h3 {
+  color: #009faf;
+}
+
+.focus-bg {
+  background-color: #707070;
+}
+
+
+@media only screen and (min-width: 35em) {
+
+  .about-content {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    background-color: transparent;
+  }
+
 }
