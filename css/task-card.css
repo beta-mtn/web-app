@@ -106,11 +106,18 @@ select {
 
 .recent-large-screen{
   display: none;
+  text-align: center;
 }
+
+.recent-graph {
+  display: none;
+}
+
 @media only screen and (min-width: 60em) {
 
   .recent-card {
     display: block;
+    text-align: center;
 
   }
 
@@ -120,10 +127,16 @@ select {
 
   .recent-large-screen {
     display: block;
+    text-align: center;
   }
 
   .recent-cards {
     display: none;
+    text-align: center;
   }
 
+  .recent-graph {
+    display: inline-block;
+    text-align: center;
+  }
 }
