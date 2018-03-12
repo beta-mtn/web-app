@@ -16,7 +16,6 @@ h2 {
 h3 {
   color: #009FAF;
   text-align: center;
-
 }
 
 p{
@@ -27,9 +26,9 @@ p{
 .timesup-heading {
   text-align: left;
 }
+
 .timesup {
   text-align: left;
-
 }
 
 .break{
@@ -46,10 +45,8 @@ p{
 }
 
 .btn-two{
-  width: 150px;
   display:inline-flex;
   margin: auto;
   text-align: center;
-  padding-left:70px;
 }
 
