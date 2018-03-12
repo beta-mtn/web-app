@@ -6,10 +6,9 @@ html {
 	box-sizing: inherit;
 }
 
-header {
+.masthead {
   background:linear-gradient(#0093A6,#004A53);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 20em;
 }
 
 body {
@@ -23,9 +22,6 @@ h1 {
   text-align: center;
 }
 
-.masthead {
-  max-width: 20em;
-}
 
 .navigation {
   color: #fff;
