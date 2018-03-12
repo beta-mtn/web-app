@@ -110,6 +110,10 @@ h1 {
   text-align: center;
 }
 
+.focus-button {
+	width: 50%;
+}
+
 .cssCircle {
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;

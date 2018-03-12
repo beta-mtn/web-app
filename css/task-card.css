@@ -107,18 +107,26 @@ select {
 .recent-large-screen{
   display: none;
   text-align: center;
+  width: 100%;
 }
 
 .recent-graph {
   display: none;
 }
 
-@media only screen and (min-width: 60em) {
+.recent-small-screen {
+  width: 100%;
+}
+
+.recentgraph {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
 
   .recent-card {
     display: block;
     text-align: center;
-
   }
 
   .focused-large-screen {
@@ -130,6 +138,10 @@ select {
     text-align: center;
   }
 
+  .recent-small-screen {
+    display: none;
+  }
+
   .recent-cards {
     display: none;
     text-align: center;
@@ -138,5 +150,9 @@ select {
   .recent-graph {
     display: inline-block;
     text-align: center;
+  }
+
+  .recentgraph {
+    display: none;
   }
 }
