@@ -39,6 +39,7 @@
 .event-card {
   background:linear-gradient(#0093A6,#004A53);
   color: #fff;
+  width: 100%;
 }
 
 .breaktime {
@@ -139,7 +140,6 @@ select {
 
   .recent-large-screen {
     display: block;
-    text-align: center;
   }
 
   .recent-small-screen {
