@@ -133,6 +133,11 @@ select {
 
 .focused-card-sub {
   font-size: .5em;
+  margin-bottom: .5em;
+}
+
+.timeofday-title {
+  color: #fff;
 }
 
 @media only screen and (min-width: 38em) {
