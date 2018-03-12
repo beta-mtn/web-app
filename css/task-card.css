@@ -122,6 +122,10 @@ select {
   display: none;
 }
 
+.bottombuttons {
+  width: 100%;
+}
+
 @media only screen and (min-width: 38em) {
 
   .recent-card {
