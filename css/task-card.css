@@ -30,7 +30,6 @@
   margin-top: 1em;
 }
 
-
 .task-name {
   padding-right: 2em;
 }
@@ -69,6 +68,10 @@ input[type=checkbox]:checked ~ .task-settings {
   display: block;
 }
 
+input[type=checkbox]:checked ~ .task-settings {
+  display: block;
+}
+
 .task-title {
   color: #00BCD4;
 }
@@ -100,6 +103,9 @@ input[type=checkbox]:checked ~ .task-settings {
   display: none;
 }
 
+.recent-large-screen{
+  display: none;
+}
 @media only screen and (min-width: 60em) {
 
   .recent-card {
@@ -109,6 +115,14 @@ input[type=checkbox]:checked ~ .task-settings {
 
   .focused-large-screen {
     display: inline-block;
+  }
+
+  .recent-large-screen {
+    display: block;
+  }
+
+  .recent-cards {
+    display: none;
   }
 
 }

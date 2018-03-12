@@ -198,15 +198,3 @@ h1 {
   font: 100px Roboto, sans-serif
 }
 
-@media only screen and (min-width: 60em) {
-
-  .recent-graph {
-    display: block;
-
-  }
-
-  .focused-large-screen {
-    display: inline-block;
-  }
-
-}
