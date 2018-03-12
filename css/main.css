@@ -73,6 +73,7 @@ h1 {
 }
 .btn-grey {
   background-color: #E3E3E3;
+  background-image: none;
   border-radius: 3px;
   padding: 10px;
   text-decoration: none;
