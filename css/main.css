@@ -198,3 +198,7 @@ h1 {
   font: 100px Roboto, sans-serif
 }
 
+.footer {
+  background-color: #013C42;
+  color: #fff;
+}
