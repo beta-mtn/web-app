@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #f1f1f1;
+  background:linear-gradient(#0093A6,#004A53);
   font-family: Roboto, sans-serif;
   padding-left: 1.53em;
   }
@@ -22,7 +22,9 @@ h1 {
   text-align: center;
 }
 
-
+header {
+    background-color: #f1f1f1;
+}
 .navigation {
   color: #fff;
   text-align: center;
